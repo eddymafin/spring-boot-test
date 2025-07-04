@@ -10,6 +10,7 @@ import com.example.demo.form.ReviewRegistForm;
 @Controller
 public class ReviewController {
 	
+	/*--- レビュー登録画面表示リクエスト ---*/
 	@GetMapping("/show-review-form")
 	public String showReviewForm(@ModelAttribute ReviewRegistForm form) {
 		return "regist-review";
