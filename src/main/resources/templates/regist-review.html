@@ -13,6 +13,7 @@
 
 	<form th:action="@{/regist-review}" method="POST" th:object="${reviewRegistForm}">
 		【店舗ID】<br>
+		<!-- th:fieldで、id、name、valueが自動で出力される -->
 		<input type="text" th:field="*{restaurantId}"><br>
 		<br>
 		【利用者ID】<br>
